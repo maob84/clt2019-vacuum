@@ -1,0 +1,33 @@
+Script started on Mon 11 Mar 2019 10:21:11 PM CET
+]0;mobst@tig: ~/xiaomi_mi_robot/clt2019mobst@tig:~/xiaomi_mi_robot/clt2019$ source flasher/venv/ac[K[Kbin/activate
+(venv) ]0;mobst@tig: ~/xiaomi_mi_robot/clt2019mobst@tig:~/xiaomi_mi_robot/clt2019$ /discmirobo --debug discover --handshake true
+INFO:miio.vacuum_cli:Debug mode active
+INFO:miio.device:Sending discovery to <broadcast> with timeout of 5s..
+DEBUG:miio.protocol:Unable to decrypt, returning raw bytes: b''
+DEBUG:miio.device:Got a response: Container: 
+    data = Container: 
+        offset1 = 32
+        value = b'' (total 0)
+        offset2 = 32
+        length = 0
+        data = b'' (total 0)
+    header = Container: 
+        offset1 = 0
+        value = Container: 
+            length = 32
+            unknown = 0
+            device_id = b'\x04m*6' (total 4)
+            ts = 1970-01-01 00:14:57
+        offset2 = 16
+        length = 16
+        data = b'!1\x00 \x00\x00\x00\x00\x04m*6\x00\x00\x03\x81' (total 16)
+    checksum = b'2mjQTpYASkJFOE00' (total 16)
+INFO:miio.device:  IP 192.168.8.1 (ID: 046d2a36) - token: b'326d6a5154705941536b4a464f453030'
+INFO:miio.device:Discovery done
+(venv) ]0;mobst@tig: ~/xiaomi_mi_robot/clt2019mobst@tig:~/xiaomi_mi_robot/clt2019$ mirobo --ip=192.178[K[K68.81.[K[K.1 --token=326d6a5154705941536b4a464f453030 configure-wifi w [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cw lan24 21062007
+Configuring wifi to SSID: wlan24
+OK
+(venv) ]0;mobst@tig: ~/xiaomi_mi_robot/clt2019mobst@tig:~/xiaomi_mi_robot/clt2019$ exit
+
+Script done on Mon 11 Mar 2019 10:23:28 PM CET

@@ -1,0 +1,134 @@
+Script started on Mon 11 Mar 2019 09:30:46 PM CET
+root@tig:/home/mobst/xiaomi_mi_robot/clt2019# mkdirima[Kmkdir image
+root@tig:/home/mobst/xiaomi_mi_robot/clt2019# cd image/
+root@tig:/home/mobst/xiaomi_mi_robot/clt2019/image# /img[K
+root@tig:/home/mobst/xiaomi_mi_robot/clt2019/image# /fir../dustcloud/devices/xiaomi.vacuum/firmwarebuilder/imagebuilder.sh -f ../ffirmware/v11_003468.fullos.pkg --soundfile ../firmware/english.pkg --public-key ~mobst/.ssh/authorized_keys --dummycloud-path==../dummycloud/ --valetudo-path=../valetudo/ --disable-firmware-updates --rrlogd-patcher=../rrlogd-patcher/patcher.py --replacce-adbd[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+Script path: ../dustcloud/devices/xiaomi.vacuum/firmwarebuilder
+Generate SSH Host Keys if necessary
+Generating public/private rsa key pair.
+Your identification has been saved in ssh_host_rsa_key.
+Your public key has been saved in ssh_host_rsa_key.pub.
+The key fingerprint is:
+SHA256:JIew3wENxQULygI2AGx+adf7ajFbm+iqbUrzEsskLts root@tig
+The key's randomart image is:
++---[RSA 2048]----+
+|Bo  . +=oo.      |
+|.+.. + +o.       |
+|o . = + =        |
+| . = o * .       |
+|  o . . S        |
+| . o   + .       |
+|. +oo   B o      |
+|.o.++. + +       |
+|o.Eo=++o.        |
++----[SHA256]-----+
+Generating public/private dsa key pair.
+Your identification has been saved in ssh_host_dsa_key.
+Your public key has been saved in ssh_host_dsa_key.pub.
+The key fingerprint is:
+SHA256:37TQmWTpVriu5rhVvQFTsQhr0nlsvEK40LxROg3rgAw root@tig
+The key's randomart image is:
++---[DSA 1024]----+
+|  E     . o   o. |
+|   o . o O * = . |
+|    o o X B & o  |
+|       + O B X   |
+|        S o @ o  |
+|         . O . o |
+|          o + .  |
+|         o..     |
+|        o+o      |
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in ssh_host_ecdsa_key.
+Your public key has been saved in ssh_host_ecdsa_key.pub.
+The key fingerprint is:
+SHA256:gD1+U/INXPGxcFaqJckyZzQgCmgjGwFpWHMSWvxHnAM root@tig
+The key's randomart image is:
++---[ECDSA 256]---+
+|==*oEo .. ..*.+..|
+|=+=+ +=. o + B + |
+|o= o..=.. * * =  |
+|.   ...o + B +   |
+|     .. S . o    |
+|       . .       |
+|                 |
+|                 |
+|                 |
++----[SHA256]-----+
+Generating public/private ed25519 key pair.
+Your identification has been saved in ssh_host_ed25519_key.
+Your public key has been saved in ssh_host_ed25519_key.pub.
+The key fingerprint is:
+SHA256:5LAflkIoAdoU3T60rGFZbfrQ18CIfPKNu0sE69vWNxU root@tig
+The key's randomart image is:
++--[ED25519 256]--+
+|..+o o o o       |
+|.o ...B = o      |
+|. o .*+O.o o     |
+|   .+.BB+.o . E  |
+|   . o++So     . |
+|    .. =o.    .  |
+|      . oo   .   |
+|       +o . o    |
+|      ..o. . .   |
++----[SHA256]-----+
+Decrypt soundfile ..
+Unpack soundfile ..
+/home/mobst/xiaomi_mi_robot/clt2019/image/fw.zkyMDc/sounds /home/mobst/xiaomi_mi_robot/clt2019/image
+/home/mobst/xiaomi_mi_robot/clt2019/image
+Decrypt firmware
+Unpack firmware
+/home/mobst/xiaomi_mi_robot/clt2019/image/fw.zkyMDc/fw /home/mobst/xiaomi_mi_robot/clt2019/image
+/home/mobst/xiaomi_mi_robot/clt2019/image
+Replace ssh host keys
+Disable SSH firewall rule
+Add SSH authorized_keys
+reconfiguring network traffic to xiaomi
+replacing adbd
+Creating backup of rrlogd
+Trying to patch rrlogd
+/home/mobst/xiaomi_mi_robot/clt2019/image/fw.zkyMDc /home/mobst/xiaomi_mi_robot/clt2019/image
+Original 0000FFA7:  F2, 04, 03, FF, F7, 4B, FF
+Patched  0000FFA7:  F2, 04, 03, E3, 20, 4B, FF
+Original 0000FD8A:  33, 46, 4B, A8, 10, 22
+Patched  0000FD8A:  33, 46, 47, A8, 10, 22
+Patch appears to be successful. Writing to outfile
+The patched rrlogd has been written to rrlogd_patch
+/home/mobst/xiaomi_mi_robot/clt2019/image
+Successfully patched rrlogd
+Installing dummycloud
+dos2unix: converting file ../dummycloud//doc/dummycloud.conf to Unix format...
+dos2unix: converting file ../dummycloud//doc/etc_hosts-snippet.txt to Unix format...
+dos2unix: converting file ../dummycloud//doc/etc_rc.local-snippet.txt to Unix format...
+Installing valetudo
+Pack new firmware
+/home/mobst/xiaomi_mi_robot/clt2019/image/fw.zkyMDc/fw /home/mobst/xiaomi_mi_robot/clt2019/image
+Encrypt firmware
+/home/mobst/xiaomi_mi_robot/clt2019/image
+Copy firmware to output/v11_003468.fullos.pkg and creating checksums
+Cleaning up
+FINISHED
+4559ea74b8b92680b81c9f2bfac06471  output/v11_003468.fullos.pkg
+root@tig:/home/mobst/xiaomi_mi_robot/clt2019/image# ls -lh
+total 36K
+drwxr-xr-x 2 root root 4.0K Mar 11 21:32 output
+-rw------- 1 root root  668 Mar 11 21:31 ssh_host_dsa_key
+-rw-r--r-- 1 root root  598 Mar 11 21:31 ssh_host_dsa_key.pub
+-rw------- 1 root root  227 Mar 11 21:31 ssh_host_ecdsa_key
+-rw-r--r-- 1 root root  170 Mar 11 21:31 ssh_host_ecdsa_key.pub
+-rw------- 1 root root  399 Mar 11 21:31 ssh_host_ed25519_key
+-rw-r--r-- 1 root root   90 Mar 11 21:31 ssh_host_ed25519_key.pub
+-rw------- 1 root root 1.7K Mar 11 21:31 ssh_host_rsa_key
+-rw-r--r-- 1 root root  390 Mar 11 21:31 ssh_host_rsa_key.pub
+root@tig:/home/mobst/xiaomi_mi_robot/clt2019/image# cd output/
+root@tig:/home/mobst/xiaomi_mi_robot/clt2019/image/output# ls -lh
+total 126M
+-rw-r--r-- 1 root root   63 Mar 11 21:32 v11_003468.fullos.md5
+-rw-r--r-- 1 root root 126M Mar 11 21:32 v11_003468.fullos.pkg
+root@tig:/home/mobst/xiaomi_mi_robot/clt2019/image/output# exit
+
+Script done on Mon 11 Mar 2019 09:32:45 PM CET
