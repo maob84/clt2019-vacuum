@@ -1,0 +1,57 @@
+diff --git a/fauxmo.py b/fauxmo.py
+index 1df4e1d..a77416b 100755
+--- a/fauxmo.py
++++ b/fauxmo.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python2
+ 
+ """
+ The MIT License (MIT)
+@@ -141,6 +141,8 @@ class upnp_device(object):
+             self.ip_address = upnp_device.local_ip_address()
+ 
+         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
++        self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
++        
+         self.socket.bind((self.ip_address, self.port))
+         self.socket.listen(5)
+         if self.port == 0:
+@@ -352,6 +354,26 @@ class upnp_broadcast_responder(object):
+         dbg("UPnP broadcast listener: new device registered")
+ 
+ 
++
++# This is a handler class which uses PUT requests 
++#
++# This lass takes two full URLs that should be requested when an on
++# and off command are invoked respectively. It ignores any return data.
++
++class put_api_handler(object):
++    def __init__(self, on_cmd, off_cmd):
++        self.on_cmd = on_cmd
++        self.off_cmd = off_cmd
++
++    def on(self):
++        requests.put(self.on_cmd)
++        return True
++
++    def off(self):
++        requests.put(self.off_cmd)
++        return True
++
++
+ # This is an example handler class. The fauxmo class expects handlers to be
+ # instances of objects that have on() and off() methods that return True
+ # on success and False otherwise.
+@@ -384,8 +406,8 @@ class rest_api_handler(object):
+ # list will be used.
+ 
+ FAUXMOS = [
+-    ['office lights', rest_api_handler('http://192.168.5.4/ha-api?cmd=on&a=office', 'http://192.168.5.4/ha-api?cmd=off&a=office')],
+-    ['kitchen lights', rest_api_handler('http://192.168.5.4/ha-api?cmd=on&a=kitchen', 'http://192.168.5.4/ha-api?cmd=off&a=kitchen')],
++        ['Staubsauger', put_api_handler('http://127.0.0.1/api/start_cleaning', 'http://127.0.0.1/api/stop_cleaning'), 56888],
++        ['Staubsauger nach Hause', put_api_handler('http://127.0.0.1/api/drive_home', 'http://127.0.0.1/api/drive_home'), 56889],
+ ]
+ 
+ 
