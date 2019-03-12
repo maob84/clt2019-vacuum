@@ -1,0 +1,11 @@
+mobst@tig:~/xiaomi_mi_robot/clt2019/fauxmo$ ./fauxmo.py -d
+Listening for UPnP broadcasts
+got local address of 192.168.1.16
+UPnP broadcast listener: new device registered
+FauxMo device 'Staubsauger' ready on 192.168.1.16:56888
+Entering main loop
+
+Responding to search for Staubsauger
+Responding to search for Staubsauger
+Responding to setup.xml for Staubsauger
+Responding to setup.xml for Staubsauger
