@@ -11,7 +11,7 @@ Slides and documents for talk at CLT2019 about connecting Xiaomi MI vacuum with 
 
 #### Fauxmo ####
 
- * patching fauxmo (PUT handling code)
+ * patching fauxmo (PUT handling code): `patch -p1 < fauxmo-vacuum.diff`
  * configuring fauxmo: adding appropriate FAUXMOS
  * copying to rockrobo: scp fauxmo.py root@...:/usr/local/bin
  * copying upstart configuration to rockrobo: scp fauxmo.conf root@...:/etc/init
