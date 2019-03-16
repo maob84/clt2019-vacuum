@@ -1,5 +1,5 @@
 # clt2019-vacuum
-Slides and documents for talk at CLT2019 about connecting rooted Xiaomi MI vacuum cleaner with Alexa.
+Slides and documents for talk at CLT2019 about connecting rooted Xiaomi MI vacuum cleaner with Alexa/Amazon Echo.
 
 
 ### Interfacing with Valetudo Backend ###
