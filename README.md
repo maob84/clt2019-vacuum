@@ -7,9 +7,10 @@ Slides and documents for talk at CLT2019 about connecting rooted Xiaomi MI vacuu
  * Starting vacuum: `curl --request PUT --url http://192.168.1.17/api/start_cleaning`
  * Stopping vacuum: `curl --request PUT --url http://192.168.1.17/api/stop_cleaning`
  * Sending vacuum back home: `curl --request PUT --url http://192.168.1.17/api/drive_home`
+ 
+ Further REST calls can be found in Valteudo/webserver/WebServer.js
 
-
-#### Fauxmo ####
+### Fauxmo ###
 
  * patching fauxmo (PUT handling code): `patch -p1 < fauxmo-vacuum.diff`
  * configuring fauxmo: adding appropriate FAUXMOS
