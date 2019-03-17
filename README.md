@@ -20,6 +20,11 @@ Slides and documents for talk at CLT2019 about connecting rooted Xiaomi MI vacuu
 	* `apt-get install python python-requests`
  * `service start fauxmo`
 
+### See also ###
+
+ * Node-RED [https://nodered.org]
+
+
 ### Misc ###
 
 For further questions or comments do not hestiate to contact me under <marcus.obst@outlook.de>.
